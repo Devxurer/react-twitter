@@ -1,0 +1,49 @@
+@keyframes caret {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.field-form {
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    animation: caret 2s ease 0s 1 normal forwards;
+}
+
+.field-form__button {
+    color: #fff;
+    background-color: #0050ff;
+    padding: 10px 15px;
+    border-radius: 24px;
+
+    transition: opacity 0.4s;
+}
+
+.field-form__button:disabled {
+    cursor: default;
+    opacity: 0.7 !important;
+}
+
+.field-form__button:hover {
+    opacity: 0.7;
+}
+
+.field-form__button:active {
+    opacity: 0.3s;
+}
+
+.field-form__field {
+    font-size: 14px;
+    line-height: 1.3em;
+    flex-grow: 1;
+}
